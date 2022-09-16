@@ -14,7 +14,8 @@ setInterval(() => {
     if (index === image.length) {
         index = 0
     }
-    slider.setAttribute('src', image[index])
+    const imageLink = image[index]
+    slider.setAttribute('src', imageLink)
     // console.log(image[index])
     index++;
 }, 1000)
